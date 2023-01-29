@@ -1,0 +1,2 @@
+1. I controlli non sono completi e alcuni non funzionano come:
+    -alla registrazione, se i campi sono validi, la rotta porta alla pagina user, altrimenti non porta da nessuna parte ma non esce nessun messaggio, ma non viene salvato sul db

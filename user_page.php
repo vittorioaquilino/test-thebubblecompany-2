@@ -12,6 +12,5 @@ print("
     <p>Sei loggato</p>
     <a href='accesso.php'>Logout</a>
     </body>
-    </html>")
-
+    </html>");
 ?>
