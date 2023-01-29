@@ -10,11 +10,11 @@ if ((isset($_POST['email'])) && (isset($_POST['password']))) {
         $stmt->bindParam(':email', $_POST['email']);
         $stmt->bindParam(':password', $_POST['password']);
         $stmt->execute();
-        $isUsernameValid = filter_var(
-            $username,
+        $isEmailValid = filter_var(
+            $email,
             FILTER_VALIDATE_REGEXP, [
                 "options" => [
-                    "regexp" => "/^[a-z\d_]{3,20}$/i"
+                    "regexp" => @"^[^@\s]+@[^@\s]+\.[^@\s]+$"
                 ]
                 ]);
         header('location: user_page.php');
