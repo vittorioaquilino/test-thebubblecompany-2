@@ -32,12 +32,9 @@ if ((isset($_POST['email'])) && (isset($_POST['password']))) {
     
     printf($msg, '<a href="welcome.php">torna indietro</a>');
      if ($stmt->rowCount() > 0) {    
-        header('location: welcome.php');
-      } else {
         header('location: user_page.php');
+      } else {
+        header('location: welcome.php');
       }
-    //     header('location: welcome.php');
-    // } else {
-    //     header('location: user_page.php');
 }
 ?>
