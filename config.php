@@ -7,7 +7,7 @@ $db="login_db";
 try {
     $dbh = new PDO("mysql:host=$url;dbname=$db", $username, $password);
     $dbh->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     echo "Connected to database";   
+    //  echo "Connected to database";   
 }
 catch (PDOException $e)
 {
